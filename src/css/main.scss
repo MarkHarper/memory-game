@@ -14,6 +14,10 @@ Header
 	float: right;
 }
 
+#lives {
+  font-family: untitled-font-1;
+}
+
 /*****************************************
 Game Grid
 *****************************************/
@@ -23,11 +27,9 @@ Game Grid
   display: inline-block;
   width: 33.3333%;
   float: left;
-  background-color: #7986cb;
   position: relative;
   padding-bottom: 33.3333%;
   border-radius: 0.5em;
-  border: 1px solid #3f51b5;
   perspective: 1000;
 }
 
@@ -38,9 +40,7 @@ Game Grid
   float: left;
   position: relative;
   padding-bottom: 16.66%;
-  background-color: #7986cb;
   border-radius: 0.5em;
-  border: 1px solid #3f51b5;
   display: inline-block;
 }
 }
