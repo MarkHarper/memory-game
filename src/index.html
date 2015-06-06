@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gulp Base</title>   
+    <link href="https://fontastic.s3.amazonaws.com/2GP83PtatM7CuT9kveTHXk/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     
-    <div></div>
+    <div class="container-fluid header">
+      <h1 id="header">Mem<span class="header-icon">b</span>ry</h1>
+      <div class="container-fluid game-tracker">
+        <span id="lives">ppppppppp</span>
+        <span id="time">2:10</span>
+      </div>
+    </div>
+    
+    <div class="container-fluid game-grid">
+      <div class="tile">
+          <div class="front"></div>
+          <div class="back">
+            <div class="icon">a</div>
+          </div>
+        </div>
+    </div>
 
     <script src="js/vendor.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

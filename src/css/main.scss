@@ -1,0 +1,79 @@
+/*******************************************
+Header
+*******************************************/
+
+#header {
+	text-align: center;
+}
+
+.header-icon {
+	font-family: untitled-font-1;
+}
+
+#time {
+	float: right;
+}
+
+/*****************************************
+Game Grid
+*****************************************/
+
+.tile {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 33.3333%;
+  float: left;
+  background-color: #7986cb;
+  position: relative;
+  padding-bottom: 33.3333%;
+  border-radius: 0.5em;
+  border: 1px solid #3f51b5;
+  perspective: 1000;
+}
+
+@media screen and (min-width: 40em) {
+  .tile {
+  box-sizing: border-box;
+  width: 16.66%;
+  float: left;
+  position: relative;
+  padding-bottom: 16.66%;
+  background-color: #7986cb;
+  border-radius: 0.5em;
+  border: 1px solid #3f51b5;
+  display: inline-block;
+}
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  position: absolute;
+  border-radius: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  height: 100%;
+  width: 100%;
+  background-color: #7986cb;
+  display: flex;
+  position: absolute;
+  border-radius: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  box-sizing: border-box;
+  font-family: untitled-font-1;
+  font-size: 2em;
+  color: white;
+}
+
+.game-grid {
+  margin: 2em 0;
+}
