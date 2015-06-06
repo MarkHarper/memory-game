@@ -100,7 +100,7 @@ gulp.task('js:vendor', function () {
     './bower_components/jquery/dist/jquery.min.js',
     './bower_components/underscore/underscore-min.js',
     './bower_components/backbone/backbone-min.js',
-    './bower_components/flip/jquery.flip.min.js'
+    './bower_components/flip/src/flip.js'
     ])
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('./dist/js'));
