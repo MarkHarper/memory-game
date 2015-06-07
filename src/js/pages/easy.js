@@ -4,8 +4,8 @@ app.router.route('easy', function () {
   
   app.displayTiles('tile-template', '#game-grid', 18);
   $('.tile').addClass('easy');
-  var x = 1;
-  $('.tile').attr('id', 'tile'+x);
+  
+  //$('.tile').attr('id', );
   
   $(".tile").flip();
   
