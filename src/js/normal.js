@@ -1,9 +1,9 @@
-app.router.route('easy', function () {
+app.router.route('normal', function () {
   
   app.display('header-template', '#header');
-  for (var i = 0; i < 18; i++) {
+  for (var i = 0; i < 24; i++) {
     app.display('tile-template', '#game-grid');
-    $('.tile').addClass('easy');
+    $('.tile').addClass('normal');
   }
   
   $(".tile").flip();

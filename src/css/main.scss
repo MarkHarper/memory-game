@@ -56,27 +56,63 @@ Header
 Game Grid
 *****************************************/
 
+#game-grid {
+  margin: 2em auto;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 40em) {
+  #game-grid {
+  padding-left: 30px;
+}
+}
+
+.normal {
+  width: ;
+  padding-bottom: ;  
+}
+
+@media screen and (min-width: 40em) {
+  .normal {
+  width: ;
+  padding-bottom: ;    
+  } 
+}
+
 .tile {
   box-sizing: border-box;
   display: inline-block;
-  width: 33.3333%;
+  width: 32%;
   float: left;
   position: relative;
-  padding-bottom: 33.3333%;
+  padding-bottom: 32%;
   border-radius: 0.5em;
   perspective: 1000;
+  margin: .1em;
 }
 
 @media screen and (min-width: 40em) {
   .tile {
   box-sizing: border-box;
-  width: 16.66%;
+  width: 16.2%;
   float: left;
   position: relative;
-  padding-bottom: 16.66%;
+  padding-bottom: 16.2%;
   border-radius: 0.5em;
   display: inline-block;
 }
+}
+
+.hard {
+  width: 25%;
+  padding-bottom: 25%;
+}
+
+@media screen and (min-width: 40em) {
+  .hard {
+  width: 12.5%;
+  padding-bottom: 12.5%;
+  } 
 }
 
 .front {
@@ -106,8 +142,4 @@ Game Grid
   font-family: $icon-font;
   font-size: 2em;
   color: $white;
-}
-
-#game-grid {
-  margin: 2em 0;
 }
