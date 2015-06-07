@@ -33,6 +33,8 @@ Header
 	text-align: center;
   font-family: $font-stack;
   color: $white;
+  font-size: 5em;
+  padding: 0.2em 0;
 }
 
 .header-icon {
@@ -67,18 +69,6 @@ Game Grid
 }
 }
 
-.normal {
-  width: ;
-  padding-bottom: ;  
-}
-
-@media screen and (min-width: 40em) {
-  .normal {
-  width: ;
-  padding-bottom: ;    
-  } 
-}
-
 .tile {
   box-sizing: border-box;
   display: inline-block;
@@ -103,15 +93,27 @@ Game Grid
 }
 }
 
+.normal {
+  width: 24%;
+  padding-bottom: 24%;  
+}
+
+@media screen and (min-width: 40em) {
+  .normal {
+  width: 12%;
+  padding-bottom: 12%;    
+  } 
+}
+
 .hard {
-  width: 25%;
-  padding-bottom: 25%;
+  width: 24%;
+  padding-bottom: 24%;
 }
 
 @media screen and (min-width: 40em) {
   .hard {
-  width: 12.5%;
-  padding-bottom: 12.5%;
+  width: 12%;
+  padding-bottom: 12%;
   } 
 }
 
