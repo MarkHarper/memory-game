@@ -5,5 +5,5 @@ app.display = function (templateId, placement, model) {
   //console.log(templateFn);
   var result = templateFn(model);
   //console.log(result);
-  $(placement).append(result);
+  $(placement).html(result);
 };

@@ -1,0 +1,3 @@
+app.appendIcons = function () {
+	
+};

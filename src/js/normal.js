@@ -2,7 +2,7 @@ app.router.route('normal', function () {
   
   app.display('header-template', '#header');
   for (var i = 0; i < 24; i++) {
-    app.display('tile-template', '#game-grid');
+    app.displayTiles('tile-template', '#game-grid', 24);
     $('.tile').addClass('normal');
   }
   

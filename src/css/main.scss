@@ -1,3 +1,5 @@
+@import 'animations';
+
 /******************************************
 Colors
 ******************************************/
@@ -144,4 +146,79 @@ Game Grid
   font-family: $icon-font;
   font-size: 2em;
   color: $white;
+}
+
+
+/******************************************
+New Game Page
+******************************************/
+
+.new-game-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'PT Sans', sans-serif;
+  color: $white;
+  margin: auto 0 auto 0;
+}
+
+.welcome-box {
+  text-align: center;
+}
+
+.menu-header {
+  font-size: 4em;
+  padding-bottom: 0.5em;
+  color: $white;
+}
+
+.new-game-message {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  color: $white;
+}
+
+.menu-button {
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 1em auto 1em auto;
+  border: 0.25em solid $white;
+  width: 25%;
+  color: $white;
+  font-size: 1.1em;
+  transition: background-color .8s ease;
+  transition: color .8s ease;
+}
+
+@media screen and (max-width: 40em) {
+  .menu-button {
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 1em auto 1em auto;
+  border: 0.25em solid $white;
+  width: 50%;
+  color: $white;
+  font-size: 1.1em;
+  }
+}
+
+#easy-button {
+  transform: perspective(200px) rotateY(-15deg);
+}
+
+#normal-button {
+  margin: 2em auto;
+}
+
+#hard-button {
+  transform: perspective(200px) rotateY(15deg);
+}
+
+.menu-button:hover {
+  background-color: $white;
+  color: $primary-color;
 }
