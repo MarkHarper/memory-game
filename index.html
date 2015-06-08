@@ -2,15 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Gulp Base</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gulp Base</title>   
+    <link href="https://fontastic.s3.amazonaws.com/2GP83PtatM7CuT9kveTHXk/icons.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
+    
+    <div id="header" class="container-fluid header">
+    </div>
+    
+    <div id="game-grid" class="container-fluid">
+    </div>
+    
+    <script id="header-template" type="text/html">   
+      <h1 id="header-title">Mem<span class="header-icon">b</span>ry</h1>
+      <div class="container-fluid game-tracker">
+        <span id="lives">ppppppppp</span>
+        <span id="time" class="count-up"></span>
+      </div>
+   </script>
+   
+   <script id="tile-template" type="text/html">   
+      <div class="tile-container">
+        <div class="tile">
+            <div class="front"></div>
+            <div class="back">
+              <div class="icon"></div>
+            </div>
+        </div>
+      </div>
+   </script>  
+   
+   <script id="new" type="text/html">
+    <div class="welcome-box pulse" >
+      <h1 class="menu-header">Mem<span class="header-icon">b</span>ry</h1>
+      <h2 class="new-game-message">New Game</h2>
+      <div id="easy-button" class="menu-button">Easy</div>
+      <div id="normal-button" class="menu-button">Normal</div>
+      <div id="hard-button" class="menu-button">Hard</div>
+    </div>
+   </script>
+    
     <script src="js/vendor.js"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/game-logic/choose-icons.js"></script>
+    <script src="js/game-logic/random-select.js"></script>
+    <script src="js/game-logic/append-icons.js"></script>
+    <script src="js/game-logic/turn.js"></script>
+    <script src="js/game-logic/match-listener.js"></script>
+    <script src="js/display-general.js"></script>
+    <script src="js/display-tiles.js"></script>
+    <script src="js/pages/easy.js"></script>
+    <script src="js/pages/normal.js"></script>
+    <script src="js/pages/hard.js"></script>
+    <script src="js/pages/start.js"></script>
     <script src="js/init.js"></script>
-
+    
   </body>
 </html>
