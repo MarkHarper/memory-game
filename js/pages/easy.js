@@ -12,6 +12,6 @@ app.router.route('easy', function () {
   //$('.tile').attr('id', );
   app.appendIcons(9);
   
-  app.turn();
+  app.turn(18);
 
 });

@@ -1407,7 +1407,12 @@ New Game Page
   margin: auto 0 auto 0; }
 
 .welcome-box {
-  text-align: center; }
+  text-align: center;
+  padding: 8% 0; }
+
+@media screen and (max-width: 40em) {
+  .welcome-box {
+    padding: 12% 0; } }
 
 .menu-header {
   font-size: 4em;

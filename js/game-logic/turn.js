@@ -1,4 +1,4 @@
-app.turn = function () {
+app.turn = function (difficulty) {
     var count = 0;
 	  $('.tile').on('click', function (e) {
     e.preventDefault();
@@ -14,9 +14,11 @@ app.turn = function () {
       app.matchListener();
       setTimeout(function() {
 			$('.flip').removeClass('flip');
-		  }, 800);
+		  }, 400);
       $('.tile').removeClass('selected1');
       $('.tile').removeClass('selected2');
+      app.checkForLoss();
+      app.checkWin(difficulty);
       return true;     
     }
     //console.log(count);
