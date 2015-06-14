@@ -5,13 +5,17 @@ Technology Used
 <li>Javascript</li>
 <li>Jquery</li>
 <li>Bootstrap</li>
+<li>Gulp</li>
 
 What I completed?
 <li>A fluid grid design that maintains the aspect ratio of its contents</li>
 <li>Complete replication of the original game's styling</li>
-<li>Implemented responsive design specifically for desktop screens</li>
+<li>Implemented responsive design for desktop and mobile</li>
+<li>Functional memory card game</li>
+<li>New game page and in-game animations</li>
 
 Issues
-<li>The responsive design does not work on mobile phones; the container does not remain centered</li>
+<li>Need to finish winning and losing screens</li>
+<li>Styling Easy and Hard modes</li>
 
 
