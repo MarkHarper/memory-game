@@ -6,6 +6,7 @@ Technology Used
 <li>Jquery</li>
 <li>Bootstrap</li>
 <li>Gulp</li>
+<li>Backbone JS</li>
 
 What I completed?
 <li>A fluid grid design that maintains the aspect ratio of its contents</li>
